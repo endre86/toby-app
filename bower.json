@@ -1,0 +1,22 @@
+{
+  "name": "TOBY",
+  "homepage": "https://github.com/endre86/toby-app",
+  "authors": [
+    "endre86 <endre.vestbo@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "~0.14.3"
+  }
+}
