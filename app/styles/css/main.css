@@ -1,0 +1,159 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* End reset and lisence */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Ubuntu"), url("../../resources/ubuntu.woff") format("woff"); }
+
+body {
+  background-color: #515D61;
+  background-image: url("../../images/background.jpg");
+  background-size: cover;
+  color: #EDEDED;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.01em; }
+
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 0.8em; }
+
+button, .start-button {
+  background-color: #2F9C32;
+  border: 1px solid #515D61;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px -3px #515D61;
+  color: #EDEDED;
+  font-size: 1.8em;
+  font-weight: bold;
+  height: 3em;
+  padding: 5px 20px 5px 20px;
+  text-decoration: none;
+  width: 100%; }
+  button i, .start-button i {
+    font-size: 0.9em;
+    padding: 0 0 0 5px; }
+
+.container {
+  background-color: rgba(81, 93, 97, 0.95);
+  height: 100%;
+  padding: 0 40px; }
+
+.display-centered, .container, .question, .receipe-glass-wrapper {
+  align-items: center;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center; }
+
+.start-button {
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px -3px #000000;
+  font-size: 2.8em;
+  padding: 10px 40px 10px 40px;
+  width: 90%; }
+
+.option-description {
+  background-color: rgba(81, 93, 97, 0.5);
+  border-radius: 1em;
+  float: right;
+  font-size: 2em;
+  padding: 1.5em;
+  width: 45%; }
+
+.options-list {
+  float: left;
+  width: 40%; }
+  .options-list .option {
+    padding-bottom: 1em; }
+  .options-list .option:last-child {
+    padding-bottom: 0; }
+
+.question {
+  flex-direction: row-reverse; }
+
+.receipe {
+  background-color: rgba(81, 93, 97, 0.5);
+  border-radius: 1em;
+  float: left;
+  margin-right: 3em;
+  padding: 1.5em; }
+
+.receipe-title {
+  font-size: 1.5em; }
+
+.ingredients-list {
+  padding: 1em; }
+
+.receipe-ingredient {
+  margin-bottom: 1em; }
+
+.receipe-ingredient-description {
+  font-size: 1.2em;
+  font-weight: bold; }
+
+.receipe-ingredient-measurement {
+  font-style: italic; }
+
+.receipe-post-text {
+  font-weight: bold; }
+
+.cocktail-glass-area-inner {
+  @extends .cocktail-glass-area-outer;
+  border: 0; }
+
+.cocktail-glass-area-outer {
+  width: 8cm;
+  height: 8cm;
+  border: 2px dashed rgba(255, 255, 255, 0.5);
+  float: right; }

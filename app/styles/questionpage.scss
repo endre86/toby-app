@@ -1,0 +1,26 @@
+.option-description {
+	background-color: transparentize($primary-color, $text-area-transparency);
+	border-radius: 1em;
+	float: right;
+	font-size: 2em;
+	padding: 1.5em;
+	width: 45%;
+}
+
+.options-list {
+	float: left;
+	width: 40%;
+
+	.option {
+		padding-bottom: 1em;
+	}
+
+	.option:last-child {
+		padding-bottom: 0;
+	}
+}
+
+.question {
+	@extend .display-centered;
+	flex-direction: row-reverse
+}

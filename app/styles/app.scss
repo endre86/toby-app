@@ -1,0 +1,80 @@
+body {
+	background-color: $primary-color;
+	background-image: url('../../images/background.jpg');
+	background-size: cover;
+	color: $base-font-color;
+	font-family: $base-font-stack;
+	font-size: $base-font-size;
+	line-height: 1.5;
+	letter-spacing:  0.01em;
+}
+
+h1 {
+	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 0.5em;
+}
+
+.container {
+	@extend .display-centered;
+
+	background-color: transparentize($primary-color, 0.05);
+	height: 100%;
+	padding: 0 40px;
+}
+
+button {
+	background-color: #2F9C32;
+	border: 1px solid $primary-color;
+	border-radius: 8px;
+	box-shadow: 3px 3px 3px -3px $primary-color;
+	color: $base-font-color;
+	font-size: 1.8em;
+	font-weight: bold;
+	height: 3em;
+	padding: 5px 20px 5px 20px;
+	text-decoration: none;
+	width: 100%;
+
+	i {
+		font-size: 0.9em;
+		padding: 0 0 0 5px; 
+	}
+}
+
+.start-button {
+	@extend .option-button;
+	border-radius: 8px;
+	box-shadow: 3px 3px 3px -3px #000000;
+	font-size: 2.8em;
+	padding: 10px 40px 10px 40px;
+	width: 90%;
+}
+
+.option-description {
+	background-color: transparentize($primary-color, 0.5);
+	border-radius: 1em;
+	float: right;
+	font-size: 2em;
+	padding: 1.5em;
+	width: 45%;
+}
+
+.options-list {
+	float: left;
+	width: 40%;
+
+	.option {
+		padding-bottom: 1em;
+	}
+
+	.option:last-child {
+		padding-bottom: 0;
+	}
+}
+
+.question {
+	@extend .display-centered;
+	flex-direction: row-reverse
+}

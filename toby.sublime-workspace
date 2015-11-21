@@ -1,0 +1,799 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"chatW",
+				"chatWindowFirstChild"
+			],
+			[
+				"chat",
+				"chatWindowFirstChild"
+			],
+			[
+				"cha",
+				"chatWindow"
+			],
+			[
+				"add",
+				"addQueen"
+			],
+			[
+				"lar",
+				"largestDivisible"
+			],
+			[
+				"quick",
+				"quicksort"
+			],
+			[
+				"z",
+				"zipWith"
+			],
+			[
+				"max",
+				"maximum"
+			],
+			[
+				"ma",
+				"maximum"
+			],
+			[
+				"doubl",
+				"doubleSmallNumbers"
+			],
+			[
+				"SESSIO",
+				"SESSION_USERNAME"
+			],
+			[
+				"PRINT",
+				"print_r"
+			],
+			[
+				"hash",
+				"hashedPassword"
+			],
+			[
+				"hei",
+				"height	(stylesheet.css)"
+			],
+			[
+				"translate",
+				"translateProvider"
+			],
+			[
+				"pri",
+				"print_r"
+			],
+			[
+				"pr",
+				"primary-color-lighten"
+			],
+			[
+				"main",
+				"main-body-container"
+			],
+			[
+				"win",
+				"windowInnerWidth"
+			],
+			[
+				"origi",
+				"originalClass"
+			],
+			[
+				"getE",
+				"getElementByClassName"
+			],
+			[
+				"pa",
+				"padding-bottom: "
+			],
+			[
+				"padding",
+				"padding-bottom: "
+			],
+			[
+				"pos",
+				"position: "
+			],
+			[
+				"pad",
+				"padding-top: "
+			],
+			[
+				"mar",
+				"margin-top: "
+			],
+			[
+				"font",
+				"font-size: "
+			],
+			[
+				"in",
+				"initial	(index.html)"
+			],
+			[
+				"menu-top",
+				"menu-top-centered"
+			],
+			[
+				"primary-col",
+				"primary-color-lighten-2"
+			],
+			[
+				"ba",
+				"background	(_layout.scss)"
+			],
+			[
+				"ali",
+				"align	(_layout.scss)"
+			],
+			[
+				"base-font",
+				"base-font-stack"
+			],
+			[
+				"padd",
+				"padding: "
+			],
+			[
+				"button-s",
+				"button-shadow-clicked"
+			],
+			[
+				"font-s",
+				"font-size: "
+			],
+			[
+				"prim",
+				"primary-color-lighten-2"
+			],
+			[
+				"primary-color-li",
+				"primary-color-lighten-2"
+			],
+			[
+				"transi",
+				"transition-property: "
+			],
+			[
+				"over",
+				"overflow: "
+			],
+			[
+				"primary-c",
+				"primary-color-darken"
+			],
+			[
+				"PADD",
+				"padding-left: "
+			],
+			[
+				"align",
+				"align-content: "
+			],
+			[
+				"box-sha",
+				"box-shadow-header"
+			],
+			[
+				"background-i",
+				"background-image: "
+			],
+			[
+				"vert",
+				"vertical-align: "
+			],
+			[
+				"paddin",
+				"padding-top: "
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"list",
+				"list-style-type: "
+			],
+			[
+				"clear",
+				"clearfix	(_mixins.scss)"
+			],
+			[
+				"line",
+				"line-height: "
+			],
+			[
+				"prima",
+				"primary-color"
+			],
+			[
+				"s",
+				"shadow"
+			],
+			[
+				"float",
+				"float: "
+			],
+			[
+				"floa",
+				"float: "
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"letter",
+				"letter-spacing: "
+			],
+			[
+				"base-f",
+				"base-font-color"
+			],
+			[
+				"bor",
+				"border: "
+			],
+			[
+				"blo",
+				"inline-block"
+			],
+			[
+				"marg",
+				"margin-right: "
+			],
+			[
+				"fl",
+				"float: "
+			],
+			[
+				"box",
+				"box-shadow: "
+			],
+			[
+				"bac",
+				"background: "
+			],
+			[
+				"vis",
+				"visibility"
+			],
+			[
+				"di",
+				"display: "
+			],
+			[
+				"v",
+				"visible	(_layout.scss)"
+			],
+			[
+				"base",
+				"base-font-color"
+			],
+			[
+				"displa",
+				"display: "
+			],
+			[
+				"main-menu-",
+				"main-menu-top"
+			],
+			[
+				"main-menu",
+				"main-menu-top"
+			],
+			[
+				"node",
+				"node_modules/css"
+			],
+			[
+				"lig",
+				"lightness	Sass-function"
+			],
+			[
+				"base-fo",
+				"base-font-stack"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/endre/Projects/foundation_test/gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 3377,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "'use strict';\n// generated on 2015-07-06 using generator-gulp-foundation 0.0.3\n\nvar gulp = require('gulp');\nvar browserSync = require('browser-sync');\nvar reload = browserSync.reload;\nvar gutil = require('gulp-util');\n\n// load plugins\nvar $ = require('gulp-load-plugins')();\n\ngulp.task('styles', function () {\n    return gulp.src('app/styles/main.scss')\n        .pipe($.sass({errLogToConsole: true}))\n        .pipe($.autoprefixer('last 1 version'))\n        .pipe(gulp.dest('app/styles'))\n        .pipe(reload({stream:true}))\n        .pipe($.size())\n        .pipe($.notify(\"Compilation complete.\"));;\n});\n\ngulp.task('scripts', function () {\n    return gulp.src('app/scripts/**/*.js')\n        .pipe($.jshint())\n        .pipe($.jshint.reporter(require('jshint-stylish')))\n        .pipe($.size());\n});\n\ngulp.task('html', ['styles', 'scripts'], function () {\n    var jsFilter = $.filter('**/*.js');\n    var cssFilter = $.filter('**/*.css');\n\n    return gulp.src('app/*.html')\n        .pipe($.useref.assets())\n        .pipe(jsFilter)\n        .pipe($.uglify())\n        .pipe(jsFilter.restore())\n        .pipe(cssFilter)\n        .pipe($.csso())\n        .pipe(cssFilter.restore())\n        .pipe($.useref.restore())\n        .pipe($.useref())\n        .pipe(gulp.dest('dist'))\n        .pipe($.size());\n});\n\ngulp.task('images', function () {\n    return gulp.src('app/images/**/*')\n        .pipe($.cache($.imagemin({\n            optimizationLevel: 3,\n            progressive: true,\n            interlaced: true\n        })))\n        .pipe(gulp.dest('dist/images'))\n        .pipe(reload({stream:true, once:true}))\n        .pipe($.size());\n});\n\ngulp.task('fonts', function () {\n    var streamqueue = require('streamqueue');\n    return streamqueue({objectMode: true},\n        $.bowerFiles(),\n        gulp.src('app/fonts/**/*')\n    )\n        .pipe($.filter('**/*.{eot,svg,ttf,woff}'))\n        .pipe($.flatten())\n        .pipe(gulp.dest('dist/fonts'))\n        .pipe($.size());\n});\n\ngulp.task('clean', function () {\n    return gulp.src(['app/styles/main.css', 'dist'], { read: false }).pipe($.clean());\n});\n\ngulp.task('build', ['html', 'images', 'fonts']);\n\ngulp.task('default', ['clean'], function () {\n    gulp.start('build');\n});\n\ngulp.task('serve', ['styles'], function () {\n    browserSync.init(null, {\n        server: {\n            baseDir: 'app',\n            directory: true\n        },\n        debugInfo: false,\n        open: false,\n        hostnameSuffix: \".xip.io\"\n    }, function (err, bs) {\n        require('opn')(bs.options.url);\n        console.log('Started connect web server on ' + bs.options.url);\n    });\n});\n\n// inject bower components\ngulp.task('wiredep', function () {\n    var wiredep = require('wiredep').stream;\n    gulp.src('app/styles/*.scss')\n        .pipe(wiredep({\n            directory: 'app/bower_components'\n        }))\n        .pipe(gulp.dest('app/styles'));\n    gulp.src('app/*.html')\n        .pipe(wiredep({\n            directory: 'app/bower_components',\n            exclude: ['bootstrap-sass-official']\n        }))\n        .pipe(gulp.dest('app'));\n});\n\ngulp.task('watch', ['serve'], function () {\n \n    // watch for changes\n    gulp.watch(['app/*.html'], reload);\n \n    gulp.watch('app/styles/**/*.scss', ['styles']);\n    gulp.watch('app/scripts/**/*.js', ['scripts']);\n    gulp.watch('app/images/**/*', ['images']);\n    gulp.watch('bower.json', ['wiredep']);\n});\n",
+			"file": "gulp.js",
+			"file_size": 0,
+			"file_write_time": 1447866876000000,
+			"settings":
+			{
+				"buffer_size": 3377,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 159.0,
+		"selected_items":
+		[
+			[
+				"convert t",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"indent",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"tab",
+				"View: Toggle Tabs"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"compa",
+				"Compare with..."
+			],
+			[
+				"compare",
+				"Compare with..."
+			],
+			[
+				"path",
+				"Insert Filepath"
+			],
+			[
+				"inser",
+				"Insert Filepath"
+			],
+			[
+				"color",
+				"Color Picker"
+			],
+			[
+				"colo",
+				"Color Picker"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"lore",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"instll",
+				"Package Control: Install Package"
+			],
+			[
+				"lorem",
+				"Snippet: Lorem ipsum"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 146.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/endre/Desktop/TOBY/index.html",
+		"/home/endre/Desktop/TOBY/app.js",
+		"/home/endre/Desktop/TOBY/gulp.js",
+		"/home/endre/Desktop/TOBY/stylesheet.scss",
+		"/home/endre/Desktop/toby/untitled",
+		"/home/endre/Desktop/firebase.html",
+		"/home/endre/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/var/www/html/puckno_tournament/index.php",
+		"/var/www/html/puckno_tournament/js/services/auth.js",
+		"/var/www/html/puckno_tournament/js/services/tournament.js",
+		"/var/www/html/puckno_tournament/php/DBHandler.php",
+		"/var/www/html/puckno_tournament/php/AuthenticationController.php",
+		"/home/endre/Desktop/impress2.html",
+		"/var/www/html/puckno_tournament/api.php",
+		"/var/www/html/puckno_tournament/php/AbstractController.php",
+		"/var/www/html/puckno_tournament/php/TournamentController.php",
+		"/var/www/html/puckno_tournament/Log/2015-08-15.log",
+		"/var/www/html/puckno_tournament/js/controllers.js",
+		"/var/www/html/puckno_tournament/misc/db-scheme.sql",
+		"/var/www/html/puckno_tournament/js/app.js",
+		"/var/www/html/puckno_tournament/php/Credentials.php",
+		"/var/www/html/puckno_tournament/templates/tournament.info.html",
+		"/var/www/html/puckno_tournament/.gitignore",
+		"/var/www/html/puckno_tournament/css/stylesheet.css",
+		"/var/www/html/turnering/php/Credentials.php",
+		"/var/www/html/turnering/js/app.js",
+		"/var/www/html/turnering/js/controllers.js",
+		"/var/www/html/turnering/templates/tournament.info.html",
+		"/var/www/html/turnering/css/stylesheet.css",
+		"/home/endre/.ssh/id_rsa.pub",
+		"/var/www/html/puckno_tournament/templates/partials/regform.individual.newplayer.html",
+		"/var/www/html/turnering/templates/partials/regform.individual.newplayer.html",
+		"/var/www/html/turnering/templates/tournament.html",
+		"/var/www/html/puckno_tournament/templates/tournament.html",
+		"/home/endre/Projects/puckno_tournament_old/puckno_tournament.sublime-project",
+		"/home/endre/Projects/puckno_tournament/puckno_tournament.sublime-project",
+		"/var/www/html/puckno_tournament/puckno_tournament.sublime-project",
+		"/home/endre/Projects/turnering_tmp/templates/tournament.players.html",
+		"/home/endre/Projects/turnering_tmp/templates/tournament.info.html",
+		"/home/endre/Projects/turnering_tmp/index.php",
+		"/home/endre/Projects/turnering_tmp/php/lib/KLogger.php",
+		"/home/endre/Projects/turnering_tmp/php/info.php",
+		"/home/endre/Projects/turnering_tmp/php/DBHandler.php",
+		"/home/endre/Projects/turnering_tmp/php/AbstractController.php",
+		"/home/endre/Projects/turnering_tmp/php/TournamentController.php",
+		"/home/endre/Projects/turnering_tmp/php/Credentials.php",
+		"/home/endre/Projects/turnering_tmp/readme.txt",
+		"/home/endre/Desktop/Programmering/www/puckno_tournament_backup/puckno_tournament/php/Credentials.php",
+		"/home/endre/Projects/puckno_tournament/php/Credentials.php",
+		"/home/endre/.cache/.fr-EIbXzG/Programmering/web10_backup/gtelite.com/gtstats/index.php",
+		"/home/endre/.cache/.fr-RR7pvA/Programmering/web10_backup/gtelite.com/index.php",
+		"/home/endre/.cache/.fr-yrzGA4/Programmering/web10_backup/gtelite.com/php_mysql.php",
+		"/home/endre/Projects/puckno_tournament/js/services/logger.js",
+		"/home/endre/Desktop/Programmering/www/puckno_tournament/js/services.js",
+		"/home/endre/.cache/.fr-tvtD2k/Programmering/sommer2013/final/src/js/io.js",
+		"/home/endre/.cache/.fr-uoBqmj/Programmering/sommer2013/final/src/js/item.js",
+		"/home/endre/.cache/.fr-vNJPsd/Programmering/sommer2013/final/src/js/itemset.js",
+		"/home/endre/.cache/.fr-lA7cWr/Programmering/sommer2013/final/src/js/reportdate.js",
+		"/home/endre/.cache/.fr-WoUKfY/Programmering/sommer2013/final/src/js/itemset.js",
+		"/home/endre/.cache/.fr-ueblqs/Programmering/sommer2013/final/src/js/for_templates/reportDisplay.js",
+		"/home/endre/.cache/.fr-W8Wr72/Programmering/sommer2013/final/src/js/for_templates/makeReport.js",
+		"/home/endre/.cache/.fr-d2g3hG/Programmering/sommer2013/final/src/css/main.css",
+		"/home/endre/.cache/.fr-9aVbXX/Programmering/sommer2013/final/forslag bestillingslister.html",
+		"/home/endre/.cache/.fr-4CjHJK/Programmering/sommer2013/final/src/templates/reportDisplay.tmpl",
+		"/home/endre/Projects/hellosalmon.com/app/styles/sass/_layout.scss",
+		"/tmp/fz3temp-1/stylesheet.css",
+		"/home/endre/Projects/puckno_tournament/templates/tournament.info.html",
+		"/home/endre/Projects/hellosalmon.com/app/index.html",
+		"/home/endre/Desktop/Pakkeliste",
+		"/home/endre/Projects/hellosalmon.com/app/styles/sass/_layout_sm.scss",
+		"/home/endre/Projects/hellosalmon.com/app/styles/sass/_layout_md.scss",
+		"/home/endre/Projects/hellosalmon.com/app/styles/sass/_layout_lg.scss",
+		"/home/endre/Projects/hellosalmon.com/gulpfile.js",
+		"/home/endre/Projects/hellosalmon.com/app/styles/sass/main.scss",
+		"/home/endre/Projects/hellosalmon.com/app/styles/sass/_bootstrap_overrides.scss",
+		"/home/endre/Projects/hellosalmon.com/app/styles/main.css",
+		"/home/endre/Projects/old/hellosalmon/index.html",
+		"/home/endre/Projects/hellosalmon.com/app/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss",
+		"/home/endre/Projects/hellosalmon.com/app/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid.scss",
+		"/home/endre/Projects/hellosalmon.com/app/styles/sass/_variables.scss",
+		"/home/endre/Projects/hellosalmon.com/app/styles/sass/_layout_xs.scss",
+		"/home/endre/Projects/hellosalmon.com/app/bower_components/font-awesome-sass/assets/stylesheets/font-awesome/_variables.scss",
+		"/home/endre/Projects/hellosalmon.com/app/bower_components/font-awesome-sass/assets/stylesheets/font-awesome.scss",
+		"/home/endre/Projects/hellosalmon.com/app/styles/sass/_animations.scss",
+		"/home/endre/Projects/hellosalmon.com/app/styles/sass/_mixins.scss",
+		"/home/endre/Projects/hellosalmon.com/app/bower_components/bootstrap-sass/README.md",
+		"/home/endre/Projects/hellosalmon.com/app/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss",
+		"/home/endre/Projects/hellosalmon.com/app/bower_components/foundation/scss/foundation.scss",
+		"/home/endre/Projects/hellosalmon.com/app/bower_components/foundation/scss/foundation/components/_grid.scss",
+		"/home/endre/Projects/hellosalmon.com/app/bower_components/foundation/scss/foundation/components/_global.scss",
+		"/home/endre/Projects/hellosalmon.com/app/bower_components/foundation/scss/foundation/_functions.scss",
+		"/home/endre/Projects/foundation_test/app/styles/main.scss",
+		"/home/endre/Projects/hellosalmon.com/app/bower_components/foundation/scss/foundation/components/_visibility.scss",
+		"/home/endre/Projects/hellosalmon.com/app/bower_components/foundation/bower.json",
+		"/home/endre/Projects/hellosalmon.com/app/styles/sass/_reset.scss",
+		"/home/endre/Projects/hellosalmon.com/gulpfile_bak.js",
+		"/home/endre/Projects/hellosalmon.com/hellosalmon.sublime-project",
+		"/home/endre/Projects/hellosalmon.com/package.json",
+		"/home/endre/Projects/hellosalmon.com/app/index_bak.html",
+		"/home/endre/Projects/hellosalmon.com/index.html",
+		"/home/endre/Projects/hellosalmon.com/styles/site.css",
+		"/home/endre/Projects/hellosalmon.com/styles/sass/_mixins.scss",
+		"/home/endre/Projects/old/hellosalmon/src/css/main.css",
+		"/home/endre/Projects/old/hellosalmon/src/index.php",
+		"/home/endre/Projects/hellosalmon.com/styles/sass/_variables.scss",
+		"/home/endre/Projects/hellosalmon.com/styles/sass/site.scss",
+		"/home/endre/Projects/hellosalmon.com/styles/sass/_layout.scss",
+		"/home/endre/Projects/hellosalmon.com/styles/sass/_reset.scss",
+		"/home/endre/Projects/hellosalmon.com/libs/foundation/css/normalize.css",
+		"/home/endre/Projects/hellosalmon.com/styles/site.scss",
+		"/home/endre/Projects/hellosalmon.com/styles/layout.css",
+		"/home/endre/Projects/hellosalmon.com/styles/sass/infrastructure.sass",
+		"/home/endre/Projects/hellosalmon.com/libs/foundation/css/foundation.css",
+		"/home/endre/Projects/hellosalmon.com/styles/sass/layout.scss",
+		"/home/endre/Projects/hellosalmon.com/styles/sass/main.scss",
+		"/home/endre/Projects/hellosalmon.com/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss",
+		"/home/endre/Projects/hellosalmon.com/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss",
+		"/home/endre/Projects/hellosalmon.com/libs/foundation/css/foundation.min.css",
+		"/home/endre/.cache/.fr-TOqD02/css/normalize.css",
+		"/home/endre/.cache/.fr-mxHLga/css/foundation.css",
+		"/home/endre/Projects/hellosalmon.com/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid.scss",
+		"/home/endre/Projects/hellosalmon.com/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss",
+		"/home/endre/Projects/hellosalmon.com/node_modules/css-reset/reset.css",
+		"/home/endre/Projects/hellosalmon.com/npm-debug.log"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"newMessageDiv",
+			"message",
+			"    ",
+			"^ 2 ",
+			"weight / height",
+			")",
+			"(",
+			"a",
+			"Int",
+			"String",
+			"Int",
+			"Num",
+			"Number",
+			"Integer",
+			"PLAYERS.REGISTEREDPLAYERS.A",
+			"\"",
+			"translateProvider",
+			" ",
+			"'min-width': $screen-md-min",
+			"/*",
+			"main",
+			"h2",
+			"$screen-screen",
+			"$",
+			"bold"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"h1"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/endre/Projects/foundation_test/gulpfile.js",
+					"settings":
+					{
+						"buffer_size": 3377,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3377,
+								3377
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "gulp.js",
+					"settings":
+					{
+						"buffer_size": 3377,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								362,
+								362
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.haskell_sublime_load":
+	{
+		"height": 118.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"index",
+				"index.php"
+			],
+			[
+				"tournamentc",
+				"php/TournamentController.php"
+			],
+			[
+				"tournamen",
+				"js/services/tournament.js"
+			],
+			[
+				"controllers",
+				"js/controllers.js"
+			],
+			[
+				"abstr",
+				"php/AbstractController.php"
+			],
+			[
+				"api",
+				"api.php"
+			],
+			[
+				"dbhan",
+				"php/DBHandler.php"
+			],
+			[
+				"authenti",
+				"php/AuthenticationController.php"
+			],
+			[
+				"contr",
+				"js/controllers.js"
+			],
+			[
+				"ind",
+				"index.html"
+			],
+			[
+				"boo",
+				"styles/sass/_bootstrap_overrides.scss"
+			],
+			[
+				"main",
+				"styles/sass/main.scss"
+			],
+			[
+				"bootstrap/mixins",
+				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss"
+			],
+			[
+				"mixins/grid",
+				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid.scss"
+			],
+			[
+				".css",
+				"styles/main.css"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"_mix",
+				"styles/sass/_mixins.scss"
+			],
+			[
+				"_var",
+				"styles/sass/_variables.scss"
+			],
+			[
+				"site.s",
+				"styles/sass/site.scss"
+			],
+			[
+				"varia",
+				"styles/sass/_variables.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 332.0,
+	"status_bar_visible": true
+}

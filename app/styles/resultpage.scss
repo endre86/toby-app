@@ -1,0 +1,58 @@
+.receipe {
+	background-color: transparentize($primary-color, $text-area-transparency);
+	border-radius: 1em;
+	float: left;
+	margin-right: 3em;
+	padding: 1.5em;
+}
+
+.receipe-glass-wrapper {
+	@extend .display-centered;
+}
+
+.receipe-title {
+	font-size: 1.5em;
+}
+
+.ingredients-list {
+	padding: 1em;
+}
+
+.receipe-ingredient {
+	margin-bottom: 1em;
+}
+
+.receipe-ingredient-description {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.receipe-ingredient-name {
+
+}
+
+.receipe-ingredient-measurement {
+	font-style: italic;
+}
+
+.receipe-post-text {
+	font-weight: bold;
+}
+
+.cocktail-glass-area-inner {
+	@extends .cocktail-glass-area-outer;
+
+
+
+	border: 0;
+}
+
+.cocktail-glass-area-outer {
+	width: 8cm;
+	height: 8cm;
+	border: 2px dashed transparentize(#FFF, $text-area-transparency);
+	float: right;
+
+	&:before {
+	}
+}

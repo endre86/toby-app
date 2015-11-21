@@ -1,0 +1,19 @@
+// Primary app color
+$primary-color: #515D61;
+
+// App font settings
+$base-font-size: 16px;
+$base-font-stack: 'Ubuntu', sans-serif;
+$base-font-color: #EDEDED;
+
+// Others
+$default-spacing: 10px;
+$text-area-transparency: 0.5;
+
+// Lets just put the font in here
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url('../../resources/ubuntu.woff') format('woff');
+}
