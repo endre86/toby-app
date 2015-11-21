@@ -53,7 +53,7 @@ table {
   src: local("Ubuntu"), url("../../resources/ubuntu.woff") format("woff"); }
 
 body {
-  background-color: #515D61;
+  background-color: #281c1c;
   background-image: url("../../images/background.jpg");
   background-size: cover;
   color: #EDEDED;
@@ -69,10 +69,10 @@ h1 {
   padding-bottom: 0.8em; }
 
 button, .start-button {
-  background-color: #2F9C32;
-  border: 1px solid #515D61;
+  background-color: #9a4f30;
+  border: 1px solid #281c1c;
   border-radius: 8px;
-  box-shadow: 3px 3px 3px -3px #515D61;
+  box-shadow: 3px 3px 3px -3px #281c1c;
   color: #EDEDED;
   font-size: 1.8em;
   font-weight: bold;
@@ -85,7 +85,7 @@ button, .start-button {
     padding: 0 0 0 5px; }
 
 .container {
-  background-color: rgba(81, 93, 97, 0.95);
+  background-color: rgba(40, 28, 28, 0.95);
   height: 100%;
   padding: 0 40px; }
 
@@ -104,7 +104,7 @@ button, .start-button {
   width: 90%; }
 
 .option-description {
-  background-color: rgba(81, 93, 97, 0.5);
+  background-color: rgba(40, 28, 28, 0.5);
   border-radius: 1em;
   float: right;
   font-size: 2em;
@@ -123,7 +123,7 @@ button, .start-button {
   flex-direction: row-reverse; }
 
 .receipe {
-  background-color: rgba(81, 93, 97, 0.5);
+  background-color: rgba(40, 28, 28, 0.5);
   border-radius: 1em;
   float: left;
   margin-right: 3em;
