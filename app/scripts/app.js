@@ -2,136 +2,141 @@
 
 (function() {
 	window.App = window.App || {};
+	window.App.ReactModules = window.App.ReactModules || {};
+	window.App.State = window.App.State || {};
+	window.App.Pages = window.App.Pages || {};
+	window.App.Pages.Questions = window.App.Questions || [];
+	
 	var App = window.App;
 
 	// ----
 	// Page render functions
-	// ----
-	var ReactModules = App.ReactModules;
-	
+	// ----	
 	var renderQuestionPage = function (pageContent) {
 		ReactDOM.render(
-			React.createElement(ReactModules.QuestionPage, {
-				title: pageContent.title,
-				description: pageContent.description,
-				options: pageContent.options
-			}),
+			React.createElement(App.ReactModules.QuestionPage, pageContent),
 			document.getElementById('container')
 		);
 	}
 
 	var renderStartPage = function(pageContent) {
 		ReactDOM.render(
-			React.createElement(ReactModules.StartPage, pageContent),
+			React.createElement(App.ReactModules.StartPage, pageContent),
 			document.getElementById('container')
 		);
 	}
 
 	var renderResultPage = function(pageContent) {
 		ReactDOM.render(
-			React.createElement(ReactModules.ResultPage, pageContent),
+			React.createElement(App.ReactModules.ResultPage, pageContent),
 			document.getElementById('container')
 		);
-	}	
+	}
 
-	// ----
-	// Page data
-	// ----
-	var startPage = {
+	App.Pages.StartPage = {
 		data: {
 			buttonText: 'Here is your next conversation.'
 		},
 		renderEngine: renderStartPage
 	}
 
-	var questionPage1 = {
+	App.Pages.Questions.push({
 		data: {
-			title: 'Complex / Deep - Bitter',
+			title: 'Complex / Deep',
 			description: 'Do want you feel like having a light talk, a more mind opening discussion or a possible mood and mind altering conversation?',
-			options: [
-				{ name: 'Mild', value: '0.5 cl' },
-				{ name: 'Very', value: '1.0 cl' },
-				{ name: 'Depressed artist', value: '1.5 cl' }
-			],
+			ingredient: {
+				description: 'Complex / Deep',
+				name: 'Sialogogue Reduction',
+				measurement: 'not set',
+				measurementOptions: [
+					{ name: 'Light Talk', value: '0.5 cl' },
+					{ name: 'Mind Opening', value: '1.0 cl' },
+					{ name: 'Depressed Artist', value: '1.5 cl' }
+				]
+			},
 		},
 		renderEngine: renderQuestionPage
-	};
+	});
 
-	var questionPage2 = {
+	App.Pages.Questions.push({
 		data: {
-			title: 'Entertaining / Fun - Spice',
+			title: 'Entertaining / Fun',
 			description: 'Would you like to feel a little tingle to an entertaining day/evening? Or would you like to start things off with a bang?',
-			options: [
-				{ name: 'Mild', value: '2 dashes' },
-				{ name: 'Very', value: '4 dashes' }
-			]
+			ingredient: {
+				description: 'Entertaining / Fun',
+				name: 'Black pepper tincture',
+				measurement: 'not set',
+				measurementOptions: [
+					{ name: 'Tingle', value: '2 dashes' },
+					{ name: 'Possible Bang', value: '4 dashes' }
+				]
+			}
 		},
 		renderEngine: renderQuestionPage
-	};
+	});
 
-	var questionPage3 = {
+	App.Pages.Questions.push({
 		data: {
-			title: 'Loudness / Forewardness - Ron Zacapa',
+			title: 'Loudness / Forewardness',
 			description: 'How direct, lound and bombastic would you enjoy your conversational partner?',
-			options: [
-				{ name: 'Low', value: '2.0 cl' },
-				{ name: 'Mild', value: '2.5 cl' },
-				{ name: 'Very', value: '1.5 cl' }
-			]
+			ingredient: {
+				description: 'Loudness / Forewardness',
+				name: 'Ron Zacapa 23',
+				measurement: 'not set',
+				measurementOptions: [
+					{ name: 'Soft', value: '2.0 cl' },
+					{ name: 'Mild', value: '2.5 cl' },
+					{ name: 'Bombastic', value: '1.5 cl' }
+				]
+			}
 		},
 		renderEngine: renderQuestionPage
-	};
+	});
 
-	var resultPage = {
+	App.Pages.ResultPage = {
 		data: {
 			title: 'Here is your next conversation',
 			receipeTitle: 'Receipe for your next conversation:',
-			ingredients: [
-				{ 
-					description: 'Complex',
-					ingredient: 'Sialogogue Reduction',
-					measurement: '1.0 cl'
-				},
-				{ 
-					description: 'Entertaining / fun',
-					ingredient: 'Black pepper tincture',
-					measurement: '2 dashes'
-				},
-				{ 
-					description: 'Loundness / forewardness',
-					ingredient: 'Ron Zacapa 23',
-					measurement: '2.5 cl'
-				}
-			],
+			ingredients: [],
 			receipePostText: 'Enjoy and welcome back!'
 		},
 		renderEngine: renderResultPage
 	}
 
-	App.State = App.State || {};
+	App.ShowPage = function(page) {
+		console.log(page);
+		page.renderEngine(page.data);
+	}
 
 	App.ShowNextPage = function() {
-		var newPage = App.Pages[App.State.nextPage];
-		newPage.renderEngine(newPage.data);
+		if(App.State.nextPage >= App.Pages.Questions.length) {
+			App.Pages.ResultPage.data.ingredients = App.State.ingredientList;
+			App.ShowPage(App.Pages.ResultPage);
+			return;
+		}
+
+		var nextPage = App.Pages.Questions[App.State.nextPage]
+		App.ShowPage(nextPage);
 		App.State.nextPage++;
 	}
 
-	App.Initialize = function() {
-		// Set pages
-		App.Pages = [
-			startPage,
-			questionPage1,
-			questionPage2,
-			questionPage3,
-			resultPage
-		];
-
-		// Set which page should be shown
-		App.State.nextPage = 0;
-
-		// Show page
+	App.HandleOptionClick = function(ingredient) {
+		App.RegisterIngredientChoice(ingredient);
 		App.ShowNextPage();
 	}
 
-	App.Initialize();
+	App.RegisterIngredientChoice = function(ingredient) {
+		App.State.ingredientList.push(ingredient);	
+	}
+
+	App.Initialize = function() {
+		// Set which page should be shown
+		App.State.nextPage = 0;
+
+		// Storage for ingredient list
+		App.State.ingredientList = [];
+
+		// Show start page
+		App.ShowPage(App.Pages.StartPage);
+	}
 })();
