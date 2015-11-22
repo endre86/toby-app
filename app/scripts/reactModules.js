@@ -149,7 +149,12 @@
 	ReactModules.StartPage = React.createClass({displayName: "StartPage",
 		render: function() {
 			return (
-				React.createElement(StartButton, {text:  this.props.buttonText})
+				React.createElement("div", {className: "start-button-wrapper"}, 
+					React.createElement("br", null), React.createElement("br", null), React.createElement("br", null), React.createElement("br", null), " ", React.createElement("br", null), 
+					React.createElement("br", null), React.createElement("br", null), React.createElement("br", null), React.createElement("br", null), " ", React.createElement("br", null), 
+					React.createElement("br", null), 
+					React.createElement(StartButton, {text:  this.props.buttonText})
+				)
 			);
 		}
 	});

@@ -6,3 +6,8 @@
 	padding: 10px 40px 10px 40px;
 	width: 90%;
 }
+
+.start-button-wrapper {
+	@extend .display-centered;
+	width: 100%;
+}
