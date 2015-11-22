@@ -69,7 +69,7 @@ h1 {
   padding-bottom: 0.8em; }
 
 button, .start-button {
-  background-color: #9a4f30;
+  background-color: rgba(74, 36, 21, 0.8);
   border: 1px solid #281c1c;
   border-radius: 8px;
   box-shadow: 3px 3px 3px -3px #281c1c;
@@ -104,8 +104,8 @@ button, .start-button {
   width: 90%; }
 
 .option-description {
-  background-color: rgba(40, 28, 28, 0.8);
-  box-shadow: 4px 4px 30px #281c1c, -4px -4px 30px #281c1c;
+  background-color: rgba(40, 28, 28, 0.59);
+  box-shadow: 4px 4px 30px rgba(40, 28, 28, 0.59), -4px -4px 30px rgba(40, 28, 28, 0.59);
   border-radius: 1em;
   float: right;
   font-size: 2em;
@@ -125,43 +125,57 @@ button, .start-button {
   flex-direction: row-reverse; }
 
 .receipe {
-  background-color: rgba(40, 28, 28, 0.8);
-  box-shadow: 4px 4px 30px #281c1c, -4px -4px 30px #281c1c;
+  background-color: rgba(40, 28, 28, 0.59);
+  box-shadow: 4px 4px 30px rgba(40, 28, 28, 0.59), -4px -4px 30px rgba(40, 28, 28, 0.59);
   border-radius: 1em;
   float: left;
   margin-right: 3em;
   padding: 1.5em; }
 
 .receipe-title {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  text-decoration: underline; }
 
 .ingredients-list, .simple-ingredient-list {
-  padding: 1em; }
+  padding: 1em;
+  font-style: normal; }
 
 .simple-ingredient-list {
-  padding-top: 0; }
+  padding-top: 0;
+  text-align: center; }
 
 .receipe-ingredient, .receipe-additional-ingredient {
   margin-bottom: 1em;
   font-size: 1.1em; }
 
-.receipe-ingredient-description, .receipe-post-text {
-  font-size: 1.3em;
+.receipe-ingredient-description, .receipe-post-text, .receipe-additional-ingredient-name {
+  font-size: 1.4em;
   font-weight: 600;
   font-style: underline; }
 
-.receipe-ingredient-measurement {
+.receipe-ingredient-name, .receipe-additional-ingredient {
   font-style: italic; }
+
+.receipe-ingredient-measurement {
+  padding-left: 0.5em;
+  font-weight: 700;
+  font-size: 1.1em; }
 
 .receipe-additional-ingredient {
   margin: 0; }
 
 .receipe-post-text {
-  font-weight: bold;
-  padding-left: 0.8em; }
+  font-weight: bold; }
 
 .cocktail-glass-area-outer {
   width: 10cm;
   height: 10cm;
-  border: 2px dashed rgba(255, 255, 255, 0.8);
+  border: 2px dashed #2f1b1b;
   float: right; }
+
+.receipe-additional-ingredient-name {
+  font-style: normal; }
+
+.receipe-additional-ingredient-ingredient {
+  padding-bottom: 0.5em;
+  font-style: normal; }

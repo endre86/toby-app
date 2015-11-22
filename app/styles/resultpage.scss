@@ -13,15 +13,18 @@
 
 .receipe-title {
 	font-size: 1.5em;
+	text-decoration: underline;
 }
 
 .ingredients-list {
 	padding: 1em;
+	font-style: normal;
 }
 
 .simple-ingredient-list {
 	@extend .ingredients-list;
 	padding-top: 0;
+	text-align: center;
 }
 
 .receipe-ingredient {
@@ -30,17 +33,20 @@
 }
 
 .receipe-ingredient-description {
-	font-size: 1.3em;
+	font-size: 1.4em;
 	font-weight: 600;
 	font-style: underline;
 }
 
 .receipe-ingredient-name {
-
+	font-style: italic;
 }
 
 .receipe-ingredient-measurement {
-	font-style: italic;
+	// font-style: italic;
+	padding-left: 0.5em;
+	font-weight: 700;
+	font-size: 1.1em;
 }
 
 .receipe-additional-ingredient {
@@ -52,13 +58,23 @@
 .receipe-post-text {
 	@extend .receipe-ingredient-description;
 	font-weight: bold;
-	padding-left: 0.8em;
+	// padding-left: 0.8em;
 	// text-align: center;
 }
 
 .cocktail-glass-area-outer {
 	width: 10cm;
 	height: 10cm;
-	border: 2px dashed transparentize(#FFF, 0.2);
+	border: 2px dashed rgb(47, 27, 27);//transparentize(#FFF, 0.2);
 	float: right;
+}
+
+.receipe-additional-ingredient-name {
+ 	@extend .receipe-ingredient-description;
+ 	font-style: normal;
+}
+
+.receipe-additional-ingredient-ingredient{
+	padding-bottom: 0.5em;
+	font-style: normal;
 }

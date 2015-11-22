@@ -46,7 +46,7 @@
 			description: 'Do want you feel like having a light talk, a more mind opening discussion or a possible mood and mind altering conversation?',
 			ingredient: {
 				description: 'Complex / Deep',
-				name: 'Sialogogue Reduction',
+				name: 'Sialogogue reduction',
 				measurement: 'not set',
 				measurementOptions: [
 					{ name: 'Light Talk', value: '0.5 cl' },
@@ -84,9 +84,9 @@
 				name: 'Ron Zacapa 23',
 				measurement: 'not set',
 				measurementOptions: [
-					{ name: 'Soft', value: '2.0 cl' },
+					{ name: 'Shy', value: '2.0 cl' },
 					{ name: 'Mild', value: '2.5 cl' },
-					{ name: 'Bombastic', value: '1.5 cl' }
+					{ name: 'Bombastic', value: '3.0 cl' }
 				]
 			}
 		},
@@ -96,12 +96,18 @@
 	App.Pages.ResultPage = {
 		data: {
 			title: 'Here is your next conversation',
-			receipeTitle: 'Receipe for your next conversation:',
+			receipeTitle: 'Recipe:',
 			ingredients: [],
 			receipePostText: 'Top',
 			additionalIngredients: [
-				'Davenne Cremant de Boargogne',
-				'1 x Black sugare cube'
+				{
+					name: 'Top',
+					ingredient: 'Davenne Crémant de Bourgogne'
+				},
+				{
+					name: 'Add',
+					ingredient: '1 x Black sugar cube'
+				}
 			]
 		},
 		renderEngine: renderResultPage
@@ -140,8 +146,8 @@
 		App.State.ingredientList = [];
 
 		// Show start page
-		// App.ShowPage(App.Pages.StartPage);
-		App.ShowPage(App.Pages.Questions[0]);
+		App.ShowPage(App.Pages.StartPage);
+		// App.ShowPage(App.Pages.Questions[0]);
 		// App.Pages.ResultPage.data.ingredients = [
 		// 	{
 		// 		description: 'Description',
@@ -159,6 +165,6 @@
 		// 		measurement: 'over 3000'
 		// 	}
 		// ];
-		// App.ShowPage(App.Pages.Questions[1]);
+		// App.ShowPage(App.Pages.ResultPage);
 	}
 })();

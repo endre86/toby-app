@@ -2,13 +2,15 @@
 // $primary-color: #515D61; // gray
 // $primary-color: rgb(81, 93, 97); // gray
 $primary-color: rgb(40, 28, 28); // brown #1
-$primary-color-trans: transparentize($primary-color, 0.2);
-$primary-color-trans2: transparentize($primary-color, 0.95);
+$primary-color-trans: transparentize($primary-color, 0.41);
+$primary-color-trans2: transparentize($primary-color, 0.90);
 
 // $secondary-color: #2F9C32; // green
 // $secondary-color: rgb(47, 156, 1); // green
 // $secondary-color: rgb(203, 137, 103); // skin
-$secondary-color: rgb(154, 79, 48); // skin2
+// $secondary-color: rgb(154, 79, 48); // skin2
+$secondary-color: rgb(74, 36, 21); // skin3
+// $secondary-color: rgb(72, 37, 23); // skin4
 
 // App font settings
 $base-font-size: 16px;
@@ -21,7 +23,7 @@ $default-spacing: 10px;
 @mixin textbox-background {
 	background-color: $primary-color-trans;
 	// background: -webkit-gradient(radial, center center, 10, center center, 1000, from($primary-color-trans), to($primary-color-trans2));
-	box-shadow: 4px 4px 30px $primary-color, -4px -4px 30px $primary-color; //x, y, blur
+	box-shadow: 4px 4px 30px $primary-color-trans, -4px -4px 30px $primary-color-trans; //x, y, blur
 }
 
 // Lets just put the font in here
