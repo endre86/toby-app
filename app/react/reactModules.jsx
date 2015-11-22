@@ -29,12 +29,12 @@
 
 	var OptionButton = React.createClass({
 		handleClick: function() {
-			window.App.ShowNextPage();
+			this.props.handleClick(this.props.value);
 		},
 		render: function() {
 			return (
 				<button className="option-button" onClick={this.handleClick}>
-					{this.props.option.name}
+					{this.props.name}
 				</button>
 			);
 		}
@@ -42,15 +42,24 @@
 
 	var OptionsList = React.createClass({
 		render: function() {
-			var options = this.props.options.map(this.renderOptions);
+			var options = this.props.ingredient.measurementOptions.map(this.renderOptions);
+
 			return (
 				<div className="options-list">{ options }</div>
 			);
 		},
-		renderOptions: function(option) {
+		renderOptions: function(measurementOptions) {
+			measurementOptions.handleClick = this.handleClick;
+			var option = React.createElement(OptionButton, measurementOptions);
 			return (
-				<div className="option"><OptionButton option={ option } /></div>
+				<div className="option">
+					{ option }
+				</div>
 			);
+		},
+		handleClick: function(measurement) {
+			this.props.ingredient.measurement = measurement;
+			window.App.HandleOptionClick(this.props.ingredient);
 		}
 	});
 
@@ -72,6 +81,7 @@
 
 	var ReceipeIngredient = React.createClass({
 		render: function() {
+			console.log(this.props);
 			return (
 				<div className="receipe-ingredient">
 					<span className="receipe-ingredient-description">
@@ -102,26 +112,26 @@
 			return (
 				<ReceipeIngredient 
 					description = { ingredient.description }
-					ingredient = { ingredient.ingredient }
+					ingredient = { ingredient.name }
 					measurement = { ingredient.measurement } />
 			);
 		}
 	});
 
-	var Page = React.createClass({
-		render: function() {
-			return (
-				<div className="page-content">
-					{this.props.children}
-				</div>
-			)
-		}
-	});
+	// var Page = React.createClass({
+	// 	render: function() {
+	// 		return (
+	// 			<div className="page-content">
+	// 				{ this.props.children }
+	// 			</div>
+	// 		)
+	// 	}
+	// });
 
 	ReactModules.StartPage = React.createClass({
 		render: function() {
 			return (
-				<StartButton text={this.props.buttonText} />
+				<StartButton text={ this.props.buttonText } />
 			);
 		}
 	});
@@ -135,8 +145,8 @@
 						<Heading title={this.props.title} />
 					</div>
 					<div className="question">
-						<OptionDescription description={this.props.description} />
-						<OptionsList options={this.props.options} />
+						<OptionDescription description={ this.props.description } />
+						<OptionsList ingredient={ this.props.ingredient } />
 					</div>
 				</div>
 			);

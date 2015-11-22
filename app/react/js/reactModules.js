@@ -29,12 +29,12 @@
 
 	var OptionButton = React.createClass({displayName: "OptionButton",
 		handleClick: function() {
-			window.App.ShowNextPage();
+			this.props.handleClick(this.props.value);
 		},
 		render: function() {
 			return (
 				React.createElement("button", {className: "option-button", onClick: this.handleClick}, 
-					this.props.option.name
+					this.props.name
 				)
 			);
 		}
@@ -42,15 +42,24 @@
 
 	var OptionsList = React.createClass({displayName: "OptionsList",
 		render: function() {
-			var options = this.props.options.map(this.renderOptions);
+			var options = this.props.ingredient.measurementOptions.map(this.renderOptions);
+
 			return (
 				React.createElement("div", {className: "options-list"},  options )
 			);
 		},
-		renderOptions: function(option) {
+		renderOptions: function(measurementOptions) {
+			measurementOptions.handleClick = this.handleClick;
+			var option = React.createElement(OptionButton, measurementOptions);
 			return (
-				React.createElement("div", {className: "option"}, React.createElement(OptionButton, {option:  option }))
+				React.createElement("div", {className: "option"}, 
+					 option 
+				)
 			);
+		},
+		handleClick: function(measurement) {
+			this.props.ingredient.measurement = measurement;
+			window.App.HandleOptionClick(this.props.ingredient);
 		}
 	});
 
@@ -72,6 +81,7 @@
 
 	var ReceipeIngredient = React.createClass({displayName: "ReceipeIngredient",
 		render: function() {
+			console.log(this.props);
 			return (
 				React.createElement("div", {className: "receipe-ingredient"}, 
 					React.createElement("span", {className: "receipe-ingredient-description"}, 
@@ -102,26 +112,26 @@
 			return (
 				React.createElement(ReceipeIngredient, {
 					description:  ingredient.description, 
-					ingredient:  ingredient.ingredient, 
+					ingredient:  ingredient.name, 
 					measurement:  ingredient.measurement})
 			);
 		}
 	});
 
-	var Page = React.createClass({displayName: "Page",
-		render: function() {
-			return (
-				React.createElement("div", {className: "page-content"}, 
-					this.props.children
-				)
-			)
-		}
-	});
+	// var Page = React.createClass({
+	// 	render: function() {
+	// 		return (
+	// 			<div className="page-content">
+	// 				{ this.props.children }
+	// 			</div>
+	// 		)
+	// 	}
+	// });
 
 	ReactModules.StartPage = React.createClass({displayName: "StartPage",
 		render: function() {
 			return (
-				React.createElement(StartButton, {text: this.props.buttonText})
+				React.createElement(StartButton, {text:  this.props.buttonText})
 			);
 		}
 	});
@@ -135,8 +145,8 @@
 						React.createElement(Heading, {title: this.props.title})
 					), 
 					React.createElement("div", {className: "question"}, 
-						React.createElement(OptionDescription, {description: this.props.description}), 
-						React.createElement(OptionsList, {options: this.props.options})
+						React.createElement(OptionDescription, {description:  this.props.description}), 
+						React.createElement(OptionsList, {ingredient:  this.props.ingredient})
 					)
 				)
 			);
