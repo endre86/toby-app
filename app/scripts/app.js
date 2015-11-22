@@ -98,13 +98,16 @@
 			title: 'Here is your next conversation',
 			receipeTitle: 'Receipe for your next conversation:',
 			ingredients: [],
-			receipePostText: 'Enjoy and welcome back!'
+			receipePostText: 'Top',
+			additionalIngredients: [
+				'Davenne Cremant de Boargogne',
+				'1 x Black sugare cube'
+			]
 		},
 		renderEngine: renderResultPage
 	}
 
 	App.ShowPage = function(page) {
-		console.log(page);
 		page.renderEngine(page.data);
 	}
 
@@ -137,6 +140,25 @@
 		App.State.ingredientList = [];
 
 		// Show start page
-		App.ShowPage(App.Pages.StartPage);
+		// App.ShowPage(App.Pages.StartPage);
+		App.ShowPage(App.Pages.Questions[0]);
+		// App.Pages.ResultPage.data.ingredients = [
+		// 	{
+		// 		description: 'Description',
+		// 		name: 'Name',
+		// 		measurement: 'over 3000'
+		// 	},
+		// 	{
+		// 		description: 'Description',
+		// 		name: 'Name',
+		// 		measurement: 'over 3000'
+		// 	},
+		// 	{
+		// 		description: 'Description',
+		// 		name: 'Name',
+		// 		measurement: 'over 3000'
+		// 	}
+		// ];
+		// App.ShowPage(App.Pages.Questions[1]);
 	}
 })();

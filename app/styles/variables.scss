@@ -2,6 +2,8 @@
 // $primary-color: #515D61; // gray
 // $primary-color: rgb(81, 93, 97); // gray
 $primary-color: rgb(40, 28, 28); // brown #1
+$primary-color-trans: transparentize($primary-color, 0.2);
+$primary-color-trans2: transparentize($primary-color, 0.95);
 
 // $secondary-color: #2F9C32; // green
 // $secondary-color: rgb(47, 156, 1); // green
@@ -15,7 +17,12 @@ $base-font-color: #EDEDED;
 
 // Others
 $default-spacing: 10px;
-$text-area-transparency: 0.5;
+
+@mixin textbox-background {
+	background-color: $primary-color-trans;
+	// background: -webkit-gradient(radial, center center, 10, center center, 1000, from($primary-color-trans), to($primary-color-trans2));
+	box-shadow: 4px 4px 30px $primary-color, -4px -4px 30px $primary-color; //x, y, blur
+}
 
 // Lets just put the font in here
 @font-face {

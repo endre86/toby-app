@@ -21,16 +21,15 @@ gulp.task('reload', function () {
 });
 
 gulp.task('react', function() {
-    gulp.src('app/react/reactModules.jsx')
+    gulp.src('app/scripts/jsx/reactModules.jsx')
         .pipe(react())
-        .pipe(gulp.dest('app/react/js/'));
+        .pipe(gulp.dest('app/scripts/'));
 });
  
 gulp.task('watch', function () {
     gulp.watch('app/styles/**', ['scss']);
     gulp.watch('app/*.html', ['reload']);
-    gulp.watch('app/scripts/**', ['reload']);
-    gulp.watch('app/react/**', ['react']);
+    gulp.watch('app/scripts/jsx/**', ['react']);
  
     livereload.listen();
 });

@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"ing",
+				"ingredient"
+			],
+			[
+				"Show",
+				"ShowPage"
+			],
+			[
 				"ingre",
 				"ingredientList"
 			],
@@ -34,10 +42,6 @@
 			[
 				"measu",
 				"measurementOptions"
-			],
-			[
-				"Show",
-				"ShowNextPage"
 			],
 			[
 				"result",
@@ -439,15 +443,15 @@
 			"file": "app/index.html",
 			"settings":
 			{
-				"buffer_size": 675,
-				"line_ending": "Unix"
+				"buffer_size": 672,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "app/scripts/app.js",
 			"settings":
 			{
-				"buffer_size": 3673,
+				"buffer_size": 4047,
 				"line_ending": "Unix"
 			}
 		},
@@ -466,12 +470,20 @@
 				"buffer_size": 385,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "app/react/reactModules.jsx",
+			"settings":
+			{
+				"buffer_size": 4151,
+				"line_ending": "Windows"
+			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 180.0,
+		"height": 104.0,
 		"selected_items":
 		[
 			[
@@ -535,7 +547,7 @@
 				"Snippet: Lorem ipsum"
 			]
 		],
-		"width": 521.0
+		"width": 464.0
 	},
 	"console":
 	{
@@ -552,6 +564,8 @@
 	},
 	"file_history":
 	[
+		"/H/priv/toby-app/package.json",
+		"/H/priv/toby-app/gulpfile.js",
 		"/home/endre/Desktop/TOBY/app/index.html",
 		"/home/endre/Desktop/TOBY/app/scripts/app.js",
 		"/home/endre/Desktop/TOBY/app/react/reactModules.jsx",
@@ -677,9 +691,7 @@
 		"/home/endre/Projects/hellosalmon.com/package.json",
 		"/home/endre/Projects/hellosalmon.com/app/index_bak.html",
 		"/home/endre/Projects/hellosalmon.com/index.html",
-		"/home/endre/Projects/hellosalmon.com/styles/site.css",
-		"/home/endre/Projects/hellosalmon.com/styles/sass/_mixins.scss",
-		"/home/endre/Projects/old/hellosalmon/src/css/main.css"
+		"/home/endre/Projects/hellosalmon.com/styles/site.css"
 	],
 	"find":
 	{
@@ -756,7 +768,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -818,15 +830,15 @@
 					"file": "app/index.html",
 					"settings":
 					{
-						"buffer_size": 675,
+						"buffer_size": 672,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								646,
-								646
+								0,
+								0
 							]
 						],
 						"settings":
@@ -845,15 +857,15 @@
 					"file": "app/scripts/app.js",
 					"settings":
 					{
-						"buffer_size": 3673,
+						"buffer_size": 4047,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								918,
-								920
+								3816,
+								3816
 							]
 						],
 						"settings":
@@ -862,7 +874,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 216.0,
+						"translation.y": 1986.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -905,13 +917,40 @@
 						"selection":
 						[
 							[
-								383,
-								383
+								385,
+								385
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/react/reactModules.jsx",
+					"settings":
+					{
+						"buffer_size": 4151,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								563,
+								563
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -1062,7 +1101,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 332.0,
 	"status_bar_visible": true
 }

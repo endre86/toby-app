@@ -38,7 +38,7 @@ button {
 .container {
 	@extend .display-centered;
 
-	background-color: transparentize($primary-color, 0.05);
+	background-color: transparentize($primary-color, 0.15);
 	height: 100%;
 	padding: 0 40px;
 }

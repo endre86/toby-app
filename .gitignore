@@ -1,2 +1,12 @@
 #node modules
+<<<<<<< HEAD
 node_modules/*
+=======
+node_modules/*
+
+#bower components
+bower_components
+
+# gimp files
+*.xcf
+>>>>>>> 4b69774... wrk wrk wrk
