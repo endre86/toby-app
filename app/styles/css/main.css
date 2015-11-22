@@ -85,7 +85,7 @@ button, .start-button {
     padding: 0 0 0 5px; }
 
 .container {
-  background-color: rgba(40, 28, 28, 0.95);
+  background-color: rgba(40, 28, 28, 0.85);
   height: 100%;
   padding: 0 40px; }
 
@@ -104,16 +104,18 @@ button, .start-button {
   width: 90%; }
 
 .option-description {
-  background-color: rgba(40, 28, 28, 0.5);
+  background-color: rgba(40, 28, 28, 0.8);
+  box-shadow: 4px 4px 30px #281c1c, -4px -4px 30px #281c1c;
   border-radius: 1em;
   float: right;
   font-size: 2em;
-  padding: 1.5em;
-  width: 45%; }
+  padding: 1em;
+  width: 40%; }
 
 .options-list {
   float: left;
-  width: 40%; }
+  width: 40%;
+  padding-right: 1em; }
   .options-list .option {
     padding-bottom: 1em; }
   .options-list .option:last-child {
@@ -123,7 +125,8 @@ button, .start-button {
   flex-direction: row-reverse; }
 
 .receipe {
-  background-color: rgba(40, 28, 28, 0.5);
+  background-color: rgba(40, 28, 28, 0.8);
+  box-shadow: 4px 4px 30px #281c1c, -4px -4px 30px #281c1c;
   border-radius: 1em;
   float: left;
   margin-right: 3em;
@@ -132,28 +135,33 @@ button, .start-button {
 .receipe-title {
   font-size: 1.5em; }
 
-.ingredients-list {
+.ingredients-list, .simple-ingredient-list {
   padding: 1em; }
 
-.receipe-ingredient {
-  margin-bottom: 1em; }
+.simple-ingredient-list {
+  padding-top: 0; }
 
-.receipe-ingredient-description {
-  font-size: 1.2em;
-  font-weight: bold; }
+.receipe-ingredient, .receipe-additional-ingredient {
+  margin-bottom: 1em;
+  font-size: 1.1em; }
+
+.receipe-ingredient-description, .receipe-post-text {
+  font-size: 1.3em;
+  font-weight: 600;
+  font-style: underline; }
 
 .receipe-ingredient-measurement {
   font-style: italic; }
 
-.receipe-post-text {
-  font-weight: bold; }
+.receipe-additional-ingredient {
+  margin: 0; }
 
-.cocktail-glass-area-inner {
-  @extends .cocktail-glass-area-outer;
-  border: 0; }
+.receipe-post-text {
+  font-weight: bold;
+  padding-left: 0.8em; }
 
 .cocktail-glass-area-outer {
   width: 10cm;
   height: 10cm;
-  border: 2px dashed rgba(255, 255, 255, 0.5);
+  border: 2px dashed rgba(255, 255, 255, 0.8);
   float: right; }

@@ -1,15 +1,17 @@
 .option-description {
-	background-color: transparentize($primary-color, $text-area-transparency);
+	@include textbox-background;
 	border-radius: 1em;
 	float: right;
 	font-size: 2em;
-	padding: 1.5em;
-	width: 45%;
+	padding: 1em;
+	width: 40%;
 }
 
 .options-list {
 	float: left;
 	width: 40%;
+
+	padding-right: 1em;
 
 	.option {
 		padding-bottom: 1em;

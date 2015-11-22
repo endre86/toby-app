@@ -2,7 +2,7 @@
 	"folders":
 	[
 		{
-			"path": ".",
+			"path": "./app",
 			"folder_exclude_patterns": [".git"],
 			"file_exclude_patterns": [
 				".gitignore",
