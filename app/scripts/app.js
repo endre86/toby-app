@@ -35,7 +35,7 @@
 
 	App.Pages.StartPage = {
 		data: {
-			buttonText: 'Here is your next conversation.'
+			buttonText: 'Your next conversation.'
 		},
 		renderEngine: renderStartPage
 	}
