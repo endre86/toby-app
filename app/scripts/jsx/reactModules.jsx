@@ -90,7 +90,6 @@
 					<span className="receipe-ingredient-name">
 						{ this.props.ingredient }
 					</span>
-					 &nbsp; 
 					<span className="receipe-ingredient-measurement">
 						{ this.props.measurement }
 					</span>
@@ -103,7 +102,12 @@
 		render: function() {
 			return (
 				<div className="receipe-additional-ingredient">
-					{ this.props.ingredient }
+					<div className="receipe-additional-ingredient-name">
+						{ this.props.ingredient.name }
+					</div>
+					<div className="receipe-additional-ingredient-ingredient">
+						{ this.props.ingredient.ingredient }
+					</div>
 				</div>
 			);
 		}
@@ -178,7 +182,6 @@
 						<div className="receipe">
 							<div className="receipe-title">{ this.props.receipeTitle }</div>
 							<IngredientList ingredients={ this.props.ingredients } />
-							<div className="receipe-post-text">{ this.props.receipePostText }</div>
 							<SimpleIngredientList ingredients={ this.props.additionalIngredients } />
 						</div>
 						<div className="cocktail-glass-area-outer">

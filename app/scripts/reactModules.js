@@ -90,7 +90,6 @@
 					React.createElement("span", {className: "receipe-ingredient-name"}, 
 						 this.props.ingredient
 					), 
-					 " ",  
 					React.createElement("span", {className: "receipe-ingredient-measurement"}, 
 						 this.props.measurement
 					)
@@ -103,7 +102,12 @@
 		render: function() {
 			return (
 				React.createElement("div", {className: "receipe-additional-ingredient"}, 
-					 this.props.ingredient
+					React.createElement("div", {className: "receipe-additional-ingredient-name"}, 
+						 this.props.ingredient.name
+					), 
+					React.createElement("div", {className: "receipe-additional-ingredient-ingredient"}, 
+						 this.props.ingredient.ingredient
+					)
 				)
 			);
 		}
@@ -178,7 +182,6 @@
 						React.createElement("div", {className: "receipe"}, 
 							React.createElement("div", {className: "receipe-title"},  this.props.receipeTitle), 
 							React.createElement(IngredientList, {ingredients:  this.props.ingredients}), 
-							React.createElement("div", {className: "receipe-post-text"},  this.props.receipePostText), 
 							React.createElement(SimpleIngredientList, {ingredients:  this.props.additionalIngredients})
 						), 
 						React.createElement("div", {className: "cocktail-glass-area-outer"}, 
