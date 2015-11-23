@@ -77,10 +77,10 @@
 
 	App.Pages.Questions.push({
 		data: {
-			title: 'Loudness / Forewardness',
+			title: 'Loudness / Forwardness',
 			description: 'How direct, loud and bombastic would you enjoy your conversational partner?',
 			ingredient: {
-				description: 'Loudness / Forewardness',
+				description: 'Loudness / Forwardness',
 				name: 'Ron Zacapa 23',
 				measurement: 'not set',
 				measurementOptions: [
