@@ -43,7 +43,7 @@
 	App.Pages.Questions.push({
 		data: {
 			title: 'Complex / Deep',
-			description: 'Do want you feel like having a light talk, a more mind opening discussion or a possible mood and mind altering conversation?',
+			description: 'Do you feel like having a light talk, a more mind opening discussion or a possible mood and mind altering conversation?',
 			ingredient: {
 				description: 'Complex / Deep',
 				name: 'Sialogogue reduction',
@@ -67,8 +67,8 @@
 				name: 'Black pepper tincture',
 				measurement: 'not set',
 				measurementOptions: [
-					{ name: 'Tingle', value: '2 dashes' },
-					{ name: 'Possible Bang', value: '4 dashes' }
+					{ name: 'Tingle', value: '4 dashes' },
+					{ name: 'Possible Bang', value: '8 dashes' }
 				]
 			}
 		},
@@ -78,7 +78,7 @@
 	App.Pages.Questions.push({
 		data: {
 			title: 'Loudness / Forewardness',
-			description: 'How direct, lound and bombastic would you enjoy your conversational partner?',
+			description: 'How direct, loud and bombastic would you enjoy your conversational partner?',
 			ingredient: {
 				description: 'Loudness / Forewardness',
 				name: 'Ron Zacapa 23',
